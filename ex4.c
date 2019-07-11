@@ -3,8 +3,12 @@
 #include<time.h>
 
 int main(){
+    char name[10];
     int i,total=0;
     srand(time(NULL));
+    printf("What is your name?\n> ");
+    scanf("%s",name);
+    printf("Hello %s\n",name);
     printf("Rolling the Dice...\n");
     for(i=0;i<2;i++){
         printf("Dice %d: ",i+1);
